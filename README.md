@@ -10,8 +10,9 @@ This is the best and only place to play your gymnastic stick it games.
 
 ### TODO ###
  * Find a beatiful font
- * Build subpages
+ * Build subpages (About, Levels)
  * Order result list
+ * On hover show level descriptions
 
 ### Site ###
  - gymnastickit

@@ -1,4 +1,4 @@
-<div id="app" style="max-width: 414px; max-height: 896px; background-color: #f7f7f7; padding: 25px; margin: auto;">
+<div id="app" style="max-width: 414px; height: 100%; background-color: #f7f7f7; padding: 25px; margin: auto;">
     <h2 class="text-center">Gymnastick It</h2>
     <div v-if="status == 'HOME'">
         <h4>Rounds</h4>
@@ -50,7 +50,7 @@
         <h4>Players</h4>
 
         <div class="input-group mb-3">
-            <input v-if="players.length < 6" v-on:keyup.enter="addPlayer" name="players" v-model="player_name" type="text" class="form-control" placeholder="Player name">
+            <input v-if="players.length < 6" v-on:keyup.enter="addPlayer" name="players" v-model="player_name" type="text" class="form-control" placeholder="Player name" autocomplete="off">
             <div class="input-group-append">
                 <button v-if="players.length < 6" @click="addPlayer" class="btn btn-outline-success" type="button">Add</button>
             </div>

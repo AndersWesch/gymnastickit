@@ -12,7 +12,25 @@
         body {
             font-family: Futura,Trebuchet MS,Arial,sans-serif;
         }
+
+        html, body, main {
+            height:  100%;
+            max-height: 900px;
+        }
     </style>
+
+    <!-- Google Analytics -->
+    <?php if ($_SERVER['REMOTE_ADDR'] != '127.0.0.1') { ?>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGWWZ1KTWV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-JGWWZ1KTWV');
+        </script>;
+    <?php } ?>
+
 </head>
 <body>
     <?php
@@ -26,7 +44,7 @@
     </main>
 
     <?php
-        // include('components/footer.php');
+        include('components/footer.php');
     ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
