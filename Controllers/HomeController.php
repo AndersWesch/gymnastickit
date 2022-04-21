@@ -11,4 +11,12 @@ class HomeController extends Controller
     {
         $this->view->render('home', [], 'Skill Picker');
     }
+
+        /**
+     * Show the home page
+     */
+    public function stick()
+    {
+        $this->view->render('stick-it', [], 'Stick It');
+    }
 }

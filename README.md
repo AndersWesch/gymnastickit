@@ -1,14 +1,22 @@
-# Framework #
+# Gymnastick It #
 
-This is my own framework made for copying to quickly setup a PHP MVC Project.
+This is the best and only place to play your gymnastic stick it games.
 
 ### How do I get set up? ###
 
 * Copy project
 * Run: `composer serve` or `php -S 127.0.0.1:8000 -t public/`
-* Build application on top
+* Open brower on http://127.0.0.1:8000/home/stick
 
-### Things it needs ###
-* Models/User.php CRUD
-* Logger that logs to a file
-* System/Session.php to handle $_session related things
+### TODO ###
+ * Find a beatiful font
+ * Build subpages
+ * Order result list
+
+### Site ###
+ - gymnastickit
+ - the-stick-it
+
+### Ideas ###
+ - Adventure mode (going through all the skills (playable alone))
+ - Fold out result to see each persons scores
