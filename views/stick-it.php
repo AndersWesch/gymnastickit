@@ -1,56 +1,60 @@
 <div id="app" style="max-width: 414px; height: 100%; background-color: #f7f7f7; padding: 25px; margin: auto;">
-    <h2 class="text-center">Gymnastick It</h2>
+    <h1 class="text-center">Gymnastick It</h1>
     <div v-if="status == 'HOME'">
-        <h4>Rounds</h4>
-
-        <label style="margin-right: 10px;" for="rounds1">3<br/>
-            <input type="radio" id="rounds1" name="rounds" value="3" v-model="rounds">
-        </label>
-
-        <label style="margin-right: 10px;" for="rounds2">5<br/>
-            <input type="radio" id="rounds2" name="rounds" value="5" v-model="rounds">
-        </label>
-
-        <label style="margin-right: 10px;" for="rounds3">7<br/>
-            <input type="radio" id="rounds3" name="rounds" value="7" v-model="rounds">
-        </label>
-
-        <label style="margin-right: 10px;" for="rounds4">10<br/>
-            <input type="radio" id="rounds4" name="rounds" value="10" v-model="rounds">
-        </label>
 
         <br>
-        <br>
 
-        <h4>Level</h4>
+        <div class="row">
+            <div class="col text-center">
+                <h4>Rounds</h4>
 
-        <label style="margin-right: 10px;" for="level1">1<br/>
-            <input type="radio" id="level1" name="level" value="1" v-model="level">
-        </label>
+                <label style="margin-right: 10px;" for="rounds1">3<br/>
+                    <input type="radio" id="rounds1" name="rounds" value="3" v-model="rounds">
+                </label>
 
-        <label style="margin-right: 10px;" for="level2">2<br/>
-            <input type="radio" id="level2" name="level" value="2" v-model="level">
-        </label>
+                <label style="margin-right: 10px;" for="rounds2">5<br/>
+                    <input type="radio" id="rounds2" name="rounds" value="5" v-model="rounds">
+                </label>
 
-        <label style="margin-right: 10px;" for="level3">3<br/>
-            <input type="radio" id="level3" name="level" value="3" v-model="level">
-        </label>
+                <label style="margin-right: 10px;" for="rounds3">7<br/>
+                    <input type="radio" id="rounds3" name="rounds" value="7" v-model="rounds">
+                </label>
 
-        <label style="margin-right: 10px;" for="level4">4<br/>
-            <input type="radio" id="level4" name="level" value="4" v-model="level">
-        </label>
+                <label style="margin-right: 10px;" for="rounds4">10<br/>
+                    <input type="radio" id="rounds4" name="rounds" value="10" v-model="rounds">
+                </label>
+            </div>
+            <div class="col text-center">
+                <h4>Level</h4>
 
-        <label style="margin-right: 10px;" for="level5">5<br/>
-            <input type="radio" id="level5" name="level" value="5" v-model="level">
-        </label>
+                <label style="margin-right: 10px;" for="level1">1<br/>
+                    <input type="radio" id="level1" name="level" value="1" v-model="level">
+                </label>
 
-        <br>
+                <label style="margin-right: 10px;" for="level2">2<br/>
+                    <input type="radio" id="level2" name="level" value="2" v-model="level">
+                </label>
+
+                <label style="margin-right: 10px;" for="level3">3<br/>
+                    <input type="radio" id="level3" name="level" value="3" v-model="level">
+                </label>
+
+                <label style="margin-right: 10px;" for="level4">4<br/>
+                    <input type="radio" id="level4" name="level" value="4" v-model="level">
+                </label>
+
+                <label style="margin-right: 10px;" for="level5">5<br/>
+                    <input type="radio" id="level5" name="level" value="5" v-model="level">
+                </label>
+            </div>
+        </div>
+
         <br>
 
         <h4>Players</h4>
 
-        <div class="input-group mb-3">
-            <input v-if="players.length < 6" v-on:keyup.enter="addPlayer" name="players" v-model="player_name" type="text" class="form-control" placeholder="Player name" autocomplete="off">
+        <div class="input-group mb-3" v-if="players.length < 6">
+            <input v-on:keyup.enter="addPlayer" name="players" v-model="player_name" type="text" class="form-control" placeholder="Player name" autocomplete="off">
             <div class="input-group-append">
                 <button v-if="players.length < 6" @click="addPlayer" class="btn btn-outline-success" type="button">Add</button>
             </div>
@@ -84,7 +88,7 @@
         <div class="row">
             <div class="col text-center">
                 <p>Round</p>
-                <h2 style="margin-top: -14px;">{{ round_index }}</h2>
+                <h1 style="margin-top: -14px;">{{ round_index }}</h2>
             </div>
             <div class="col text-center">
                 <h4>Skill</h4>
@@ -104,7 +108,8 @@
                 name="stick-options"
                 id="stick"
                 autocomplete="off"
-                :checked="isButtonChecked(2)">
+                value="2"
+                v-model="players[player_index].scores[round_index]">
             <label style="width: 250px; margin-bottom: 10px;" class="btn btn-outline-success btn-lg" for="stick">Stick</label>
         </div>
 
@@ -116,7 +121,8 @@
                 name="stick-options"
                 id="step"
                 autocomplete="off"
-                :checked="isButtonChecked(1)">
+                value="1"
+                v-model="players[player_index].scores[round_index]">
             <label style="width: 250px; margin-bottom: 10px;" class="btn btn-outline-warning btn-lg" for="step">Step</label>
         </div>
 
@@ -127,7 +133,8 @@
                 class="btn-check"
                 name="stick-options"
                 id="nope" autocomplete="off"
-                :checked="isButtonChecked(0)">
+                value="0"
+                v-model="players[player_index].scores[round_index]">
             <label style="width: 250px;" class="btn btn-outline-danger btn-lg" for="nope">Nope</label>
         </div>
 
@@ -231,8 +238,7 @@
                 this.setSkill();
                 this.error = '';
                 this.status = 'RUNNING';
-
-                // TODO reset score
+                this.resetScores();
             },
 
             calculateScore: function () {
@@ -244,6 +250,12 @@
                     }
 
                     this.players[i].result = score;
+                }
+            },
+
+            resetScores: function () {
+                for (let i = 0; i < this.players.length; i++) {
+                    this.players[i].scores = {};
                 }
             },
 
@@ -279,23 +291,21 @@
             },
 
             setSkill: function () {
-                var direct = direction[Math.floor(Math.random() * direction.length)];
-
                 switch(this.level) {
                     case '1':
-                        var skill = tramp1[Math.floor(Math.random() * tramp1.length)];
+                        var skill = lvl1[Math.floor(Math.random() * lvl1.length)];
                         break;
                     case '2':
-                        var skill = tramp2[Math.floor(Math.random() * tramp2.length)];
+                        var skill = lvl2[Math.floor(Math.random() * lvl2.length)];
                         break;
                     case '3':
-                        var skill = tramp3[Math.floor(Math.random() * tramp3.length)];
+                        var skill = lvl3[Math.floor(Math.random() * lvl3.length)];
                         break;
                     case '4':
-                        var skill = tramp4[Math.floor(Math.random() * tramp4.length)];
+                        var skill = lvl4[Math.floor(Math.random() * lvl4.length)];
                         break;
                     case '5':
-                        var skill = tramp5[Math.floor(Math.random() * tramp5.length)];
+                        var skill = alegria[Math.floor(Math.random() * alegria.length)];
                         break;
                 }
 
@@ -338,51 +348,154 @@
         }
     });
 
-    var tramp1 = ['Lukket Salto','Hofte Salto','Strakt Salto','Lukket 1/2 Skrue',
-                'Hofte 1/2 Skrue','Strakt 1/2 Skrue','Lukket Hel Skrue','Strakt Hel Skrue',
-                '1 1,2 Skrue','1 1,2 Skrue','Double Skrue','Double Skrue','2 1/2 Skrue',
-                '2 1/2 Skrue','Molberg / Tysker','Molberg / Tysker'
+    var alegria = [
+        'Double Front Tuck',
+        'Double Front Pike',
+
+        'Double Back Tuck',
+        'Double Back Pike',
+
+        'Barani In Tuck',
+        'Barani In Pike',
+
+        'Front Rudy',
+        'Back Full',
+        'Front Full',
+
+        'Gainer Pike',
+        'Gainer Full',
     ];
 
-    var tramp2 = ['Lukket Salto','Hofte Salto','Lukket Hel skrue','Double Hofte','Double Strakt',
-                'Double Skrue','Tripple Skrue','Full Half','Half Full','2,5 Skrue','1,5 Skrue','Double Out',
-                'Hofte Out','Half In','Half In Half Out','Full In','Full In Hofte','3,5 Skrue','Rudy Out',
-                'Rudy In','Hofte Full Out','Molberg / Tysker','Molberg  1/2 Skrue','Molberg Hel Skrue',
-                'Tysker 1/2 Skrue','Tysker Hel Skrue', '1/2 Skrue','Strakt Full Out','Strakt Full In',
-                'Full Full','Strakt Full Full','Double Strakt 1 1/2 Skrue','Double Strakt 2 Skruer',
-                'Double lukket hel Skrue','Double lukket 1/2 Skrue','Double lukket 1 1/2 Skrue',
-                'Double lukket 2 Skruer','Double Hoft 1/2 Skrue','Double Hoft hel Skrue','Double Hoft 1 1/2 Skrue'
+    var lvl1 = [
+        'Font: Tuck',
+        'Font: Pike',
+        'Font: Straight',
+
+        'Back: Tuck',
+        'Back: Pike',
+        'Back: Straight',
+
+        'Front: Barani',
+        'Back: 1/2 Twist',
+
+        'Back: Full Twist',
+        'Front: Full Twist',
+        'Front: Rudy'
     ];
 
-    var tramp3 = ['Double Hofte','Double Strakt','Double Skrue','Tripple Skrue','Tripple Lukket',
-                'Full Half','Half Full','2,5 Skrue','1,5 Skrue','Double Out','Hofte Out','Half In',
-                'Half In Half Out', 'Full In','Full In Hofte','3,5 Skrue','Rudy Out','Rudy In','Tripple Out',
-                'Tripple Hofte', 'Hofte Full Out','Molberg / Tysker','Molberg  1/2 Skrue','Molberg Hel Skrue',
-                'Tysker 1/2 Skrue', 'Tysker Hel Skrue','Strakt Full Out','Strakt Full In','Full Full',
-                'Strakt Full Full', 'Miller','Strakt Miller','Double Strakt 1,5 Skrue','Double Strakt 2,5 Skrue',
-                'Double Strakt 3,5 Skrue','4 Skruer','4,5 Skrue', 'Lukket Rudy Out', 'Double lukket', 'Hofte Half In',
-                'Lukket Full Rudy', 'Lukket Miller', 'Strakt Full Rudy'
+    var lvl2 = [
+        'Front: Rudy',
+        'Back: Rudy',
+
+        'Front: Double Twist',
+        'Back: Double Twist',
+
+        'Front: Double Tuck',
+        'Back: Double Tuck',
+
+        'Front: Double Pike',
+        'Back: Double Pike',
+
+        'Front: Barani In Tuck',
+        'Front: Double Out Tuck',
+
+        'Front: Barani In Pike',
+        'Front: Double Out Pike',
     ];
 
-    var tramp4 = ['Double Hofte','Double Strakt','Double Skrue','Tripple Skrue','Tripple Lukket','Full Half',
-                'Half Full','2,5 Skrue','1,5 Skrue','Double Out','Hofte Out','Half In','Half In Half Out',
-                'Full In','Full In Hofte','3,5 Skrue','Rudy Out','Rudy In','Tripple Out','Tripple Hofte',
-                'Hofte Full Out','Molberg / Tysker','Molberg  1/2 Skrue','Molberg Hel Skrue','Tysker 1/2 Skrue',
-                'Tysker Hel Skrue', '1/2 Skrue','Strakt Full Out','Strakt Full In','Full Full','Strakt Full Full',
-                'Miller','Strakt Miller','Double Strakt 1,5 Skrue','Double Strakt 2,5 Skrue',
-                'Double Strakt 3,5 Skrue','4 Skruer','4,5 Skrue','5 Skruer','Tripple 1,5 Skrue','Tripple 2,5 Skrue',
-                'Tripple Hel Skrue','Killer','Double 5 Skruer','Quad','Quad Out','Tripple Rudy Out','Half In Triff',
-                'Half In Half Out Triff','Front Full Half','Half In the middle Triff','Randy Out','Addy Out',
-                'Hofte Randy Out','Hofte Addy Out','Tripple lukket Rudy Out','Half In Full Out Triff',
-                'Full In Triff Hofte','Tripple Strakt','Double Strakt 4,5 Skrue',' Double Molberg','Double Tysker',
-                'Full Full Full','Hafl Half Half','Full Half Back','Full In Half Out Triff','Hofte In Half In',
-                'Lukket In Half In','Valgfri Tripple','Valgfri Double','Valgfri Quad'
+    var lvl3 = [
+        'Front: 2,5 Twist',
+        'Back: 2,5 Twist',
+        'Back: Tripple Twist',
+
+        'Back: Double Tuck Half Out',
+        'Back: Double Pike Half Out',
+        'Back: Double Straight Half Out',
+
+        'Front: Barani In Straight',
+        'Front: Double Out Straight',
+
+        'Front: Full In Tuck', // Full In
+        'Back: Full In Tuck',
+        'Front: Full In Pike',
+        'Back: Full In Pike',
+        'Back: Full In Straight',
+
+        'Front: Double Tuck Full Out', // Full Out
+        'Back: Double Tuck Full Out',
+        'Front: Double Pike Full Out',
+        'Back: Double Pike Full Out',
+        'Back: Double Straight Full Out',
+
+        'Front: Full Full Tuck', // Full Full
+        'Back: Full Full Tuck',
+        'Front: Full Full Straight',
+        'Back: Full Full Straight',
+
+        'Front: Full Half Tuck', // Full Half
+        'Back: Full Half Tuck',
+        'Front: Full Half Straight',
+        'Back: Full Half Straight',
+
+        'Front: Double Tuck Rudy Out', // Rudy Out
+        'Front: Double Pike Rudy Out',
+        'Front: Double Straight Rudy Out',
+
+        'Front: Full Rudy Tuck',
+        'Front: Full Rudy Straight',
     ];
 
-    var tramp5 = [
-        'Double Front Tuck', 'Double Back Tuck', 'Barani in', 'Front Rudy', 'Back Full', 'Front Full', 'Gainer Tuck'
+    var lvl4 = [
+        'Back: Quadruple Twist',
+        'Front: 3,5 Twist',
+
+        'Front: Double Tuck Randy Out',
+        'Front: Double Pike Randy Out',
+
+        'Front: Rudy In Tuck',
+        'Front: Rudy In Pike',
+
+        'Back: Double Tuck Double Full Out',
+        'Back: Double Straight Double Full Out',
+
+        'Front: Full Full Tuck', // Full Full
+        'Back: Full Full Tuck',
+        'Front: Full Full Straight',
+        'Back: Full Full Straight',
+
+        'Front: Full Rudy Tuck', // Full Rudy
+        'Front: Full Rudy Straight',
+        'Back: Full Rudy Tuck',
+        'Back: Full Rudy Straight',
+
+        'Front: Miller Tuck', // Miller
+        'Front: Miller Straight',
+        'Back: Miller Tuck',
+        'Back: Miller Straight',
+
+        'Front: Double with 3,5 Twist Straight',
+        'Front: Double with 3,5 Twist Tuck',
+        'Back: Killer Straight',
+        'Back: Killer Tuck',
+
+        'Front: Tripple Tuck', // Tripples no twists
+        'Back: Tripple Tuck',
+        'Front: Tripple Pike',
+        'Back: Tripple Pike',
+
+        'Front: Tripple Out Tuck', // Tripples with twist
+        'Front: Tripple Out Pike',
+
+        'Front: Tripple Tuck Rudy Out',
+        'Front: Tripple Pike Rudy Out',
+
+        'Back: Full In Tripple Tuck',
+        'Back: Full In Tripple Pike',
+
+        'Front: Full Full Half',
+        'Front: Front Full Half',
+        'Front: Full Half Back',
+
+        'Back: Full Full Full',
     ];
-
-    var direction = ['Front', 'Back'];
-
 </script>
