@@ -100,42 +100,36 @@
 
         <br>
 
-        <div class="text-center">
+        <div class="radios">
             <input
-                @click="stick"
+                @click="nextDelayed()"
+                class="selected-green"
                 type="radio"
-                class="btn-check"
-                name="stick-options"
-                id="stick"
-                autocomplete="off"
+                id="stickradio"
                 value="2"
+                name="stick"
                 v-model="players[player_index].scores[round_index]">
-            <label style="width: 250px; margin-bottom: 10px;" class="btn btn-outline-success btn-lg" for="stick">Stick</label>
-        </div>
+            <label class="stick-green" for="stickradio">Stick</label>
 
-        <div class="text-center">
             <input
-                @click="step"
+                @click="nextDelayed()"
+                class="selected-yellow"
                 type="radio"
-                class="btn-check"
-                name="stick-options"
-                id="step"
-                autocomplete="off"
+                id="stepradio"
                 value="1"
+                name="stick"
                 v-model="players[player_index].scores[round_index]">
-            <label style="width: 250px; margin-bottom: 10px;" class="btn btn-outline-warning btn-lg" for="step">Step</label>
-        </div>
+            <label class="stick-yellow" for="stepradio">Step</label>
 
-        <div class="text-center">
             <input
-                @click="nope"
+                @click="nextDelayed()"
+                class="selected-red"
                 type="radio"
-                class="btn-check"
-                name="stick-options"
-                id="nope" autocomplete="off"
+                id="noperadio"
                 value="0"
+                name="stick"
                 v-model="players[player_index].scores[round_index]">
-            <label style="width: 250px;" class="btn btn-outline-danger btn-lg" for="nope">Nope</label>
+            <label class="stick-red" for="noperadio">Nope</label>
         </div>
 
         <br>
@@ -200,15 +194,23 @@
             round_index: 1,
             skill: '',
             level: '1',
-            error: ''
+            error: '',
         },
 
         methods: {
+            nextDelayed: function () {
+                setTimeout(() => {
+                    this.next();
+                }, 300);
+            },
+
+            isActive: function (score) {
+                return this.players[this.player_index].scores[this.round_index] == score;
+            },
+
             addPlayer: function () {
                 if (this.player_name === '') {
                     this.player_name = 'Player ' + (this.players.length + 1);
-                    // this.error = 'Missing player name';
-                    // return;
                 }
 
                 player = {
@@ -218,7 +220,6 @@
                 };
 
                 this.players.push(player);
-                //this.player_name = 'Player ' + (this.players.length + 1);
                 this.player_name = '';
                 this.error = '';
             },
@@ -246,7 +247,7 @@
                     var score = 0;
 
                     for (let j = 1; j <= this.rounds; j++) {
-                        score = score + this.players[i].scores[j];
+                        score = score + parseInt(this.players[i].scores[j]);
                     }
 
                     this.players[i].result = score;
@@ -310,7 +311,6 @@
                 }
 
                 this.skill = skill;
-                // this.skill = direct.concat(' ', skill);
             },
 
             home: function () {
@@ -335,7 +335,6 @@
 
             setScore: function (score) {
                 this.players[this.player_index].scores[this.round_index] = score;
-                this.next();
             },
 
             isButtonChecked: function (score) {
