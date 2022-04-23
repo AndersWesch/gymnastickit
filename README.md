@@ -13,6 +13,7 @@ This is the best and only place to play your gymnastic stick it games.
  * Build subpages (About, Levels)
  * Order result list
  * On hover show level descriptions
+ * Save skills to show on back
 
 ### Site ###
  - gymnastickit

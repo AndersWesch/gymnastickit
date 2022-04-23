@@ -130,6 +130,10 @@
         </script>
     <?php } ?>
 
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6970330240524637"
+     crossorigin="anonymous"></script>
+
 </head>
 <body>
     <?php

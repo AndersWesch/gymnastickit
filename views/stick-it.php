@@ -43,7 +43,7 @@
                     <input type="radio" id="level4" name="level" value="4" v-model="level">
                 </label>
 
-                <label style="margin-right: 10px;" for="level5">5<br/>
+                <label style="margin-right: 10px;" for="level5">A<br/>
                     <input type="radio" id="level5" name="level" value="5" v-model="level">
                 </label>
             </div>
@@ -252,6 +252,8 @@
 
                     this.players[i].result = score;
                 }
+
+                this.players.sort((a,b) => b.result - a.result);
             },
 
             resetScores: function () {
@@ -308,6 +310,11 @@
                     case '5':
                         var skill = alegria[Math.floor(Math.random() * alegria.length)];
                         break;
+                }
+
+                if (this.skill == skill) {
+                    this.setSkill();
+                    return;
                 }
 
                 this.skill = skill;

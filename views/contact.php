@@ -10,9 +10,9 @@
         </p>
 
         <h2>Contact</h2>
-        <p>If you have any questions or suggestion don't hesitate to shoot me and email:</p>
+        <p>If you have any questions or suggestions don't hesitate to shoot me an email:</p>
         <div class="text-center">
-            <a href="mailto:anderswesch@gmail.com">Write an email</a>
+            <a href="mailto:anderswesch@gmail.com">write it here</a>
         </div>
 
     </div>

@@ -5,7 +5,7 @@
     <div class="row" style="padding-top: 10%;">
         <h2>About</h2>
 
-        <p>This is a game completly on your own risk and you can modify the rules and equipment to your liking.</p>
+        <p>This is a game completely on your own risk and you can modify the rules and equipment to your liking.</p>
 
         <br>
 
@@ -13,7 +13,7 @@
 
         <br>
 
-        <h3>Scoring</h3>
+        <h2>Scoring</h2>
         <div>
             A Stick is a solid landing without any steps.
             A Step is a solid landing with a single step.
