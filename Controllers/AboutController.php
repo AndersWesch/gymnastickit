@@ -9,6 +9,6 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $this->view->render('about', [], 'Gymnastick It');
+        $this->view->render('about', [], 'About');
     }
 }

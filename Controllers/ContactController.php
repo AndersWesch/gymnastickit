@@ -9,6 +9,6 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $this->view->render('contact', [], 'Gymnastick It');
+        $this->view->render('contact', [], 'Contact');
     }
 }
