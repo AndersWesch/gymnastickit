@@ -1,0 +1,85 @@
+/** RADIO TEST */
+.radios {
+    padding: 0 55px;
+}
+
+.radios label,
+.radios input {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.radios label {
+    height: 50px;
+    line-height: 45px;
+}
+
+.radios input {
+}
+
+.radios input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+}
+
+.selected-green:checked+label,
+.Checked+label {
+    background: #198754;
+    color: #fff;
+}
+
+.selected-yellow:checked+label,
+.Checked+label {
+    background: #ffc107;
+    color: #212529;
+}
+
+.selected-red:checked+label,
+.Checked+label {
+    background: #dc3545;
+    color: #fff;
+}
+
+.radios .stick-green {
+    border: 1px solid #198754;
+    color: #198754;
+    cursor: pointer;
+    z-index: 90;
+    font-size: 20px;
+}
+
+.radios .stick-yellow {
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    cursor: pointer;
+    z-index: 90;
+    font-size: 20px;
+}
+
+.radios .stick-red {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    cursor: pointer;
+    z-index: 90;
+    font-size: 20px;
+}
+
+.stick-green:hover .stick-green:active{
+    background: #198754;
+    color: #fff;
+}
+
+.stick-yellow:hover .stick-yellow:active {
+    background: #ffc107;
+    color: #212529;
+}
+
+.stick-red:hover .stick-red:active {
+    background: #dc3545;
+    color: #fff;
+}

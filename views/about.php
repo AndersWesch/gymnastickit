@@ -19,6 +19,16 @@
             A Step is a solid landing with a single step.
             A Nope is everything else.
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Hard Mode</h2>
+        <div>
+            In Hard Mode you get minus score for Nope.
+        </div>
     </div>
 
 </div>

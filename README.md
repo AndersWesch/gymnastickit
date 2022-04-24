@@ -2,6 +2,9 @@
 
 This is the best and only place to play your gymnastic stick it games.
 
+### Site ###
+www.gymnastickit.com
+
 ### How do I get set up? ###
 
 * Copy project
@@ -9,15 +12,9 @@ This is the best and only place to play your gymnastic stick it games.
 * Open brower on http://127.0.0.1:8000/
 
 ### TODO ###
- * Find a beatiful font
- * Build subpages (About, Levels)
- * Order result list
- * On hover show level descriptions
- * Save skills to show on back
-
-### Site ###
- - gymnastickit
- - the-stick-it
+ * show stick and step count on result
+ * midway score
+ * level input for custom levels
 
 ### Ideas ###
  - Adventure mode (going through all the skills (playable alone))

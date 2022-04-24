@@ -1,0 +1,42 @@
+body {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.1em;
+}
+
+html, body, main {
+    height:  100%;
+    max-height: 900px;
+}
+
+a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+}
+
+thead {
+    border-bottom:2px solid black;
+}
+
+td {
+    border-bottom:1px solid #dee2e6;
+}
+
+td {
+    padding: 3px;
+}
+
+.remove-player-btn {
+    border-radius: 50%;
+    width: 32px;
+}
