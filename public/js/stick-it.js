@@ -31,6 +31,11 @@ new Vue({
                 this.player_name = 'Player ' + (this.players.length + 1);
             }
 
+            if (this.player_name.length >= 16) {
+                this.error = 'Player name too long';
+                return;
+            }
+
             player = {
                 name: this.player_name,
                 scores: {},

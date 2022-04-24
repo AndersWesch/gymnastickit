@@ -14,7 +14,6 @@ www.gymnastickit.com
 ### TODO ###
  * show stick and step count on result (progress bar)
  * midway score
- * level input for custom levels
  * add icon
 
 ### Ideas ###

@@ -14,6 +14,9 @@ var dando = [
     'Front: Randy',
     'Back: Rudy',
 
+    'Inward Front Tuck',
+    'Inward Front Pike',
+
     'Double Gainer',
     'Gainer 1,5 Twist',
     'Gainer Double Twist',

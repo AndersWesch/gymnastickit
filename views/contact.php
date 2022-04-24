@@ -15,6 +15,10 @@
             <a href="mailto:anderswesch@gmail.com">write it here</a>
         </div>
 
+        <br><br>
+
+        <h2>Can I get my own level?</h2>
+        <p>Yes - write to me</p>
     </div>
 
 </div>

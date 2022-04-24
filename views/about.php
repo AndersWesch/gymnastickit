@@ -5,7 +5,7 @@
     <div class="row" style="padding-top: 10%;">
         <h2>About</h2>
 
-        <p>This is a game completely on your own risk and you can modify the rules and equipment to your liking.</p>
+        <p>Gymnastick It is a game completely on your own risk and you can modify the rules and equipment to your liking.</p>
 
         <br>
 

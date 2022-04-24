@@ -139,20 +139,50 @@
 <hr>
 
 <h5>Alegria</h5>
-        Double Front Tuck,
-        Double Front Pike,
+    Double Front Tuck,
+    Double Front Pike,
 
-        Double Back Tuck,
-        Double Back Pike,
+    Double Back Tuck,
+    Double Back Pike,
 
-        Barani In Tuck,
-        Barani In Pike,
+    Barani In Tuck,
+    Barani In Pike,
 
-        Front Rudy,
-        Back Full,
-        Front Full,
+    Front Rudy,
+    Back Full,
+    Front Full,
 
-        Gainer Pike,
-        Gainer Full,
+    Gainer Pike,
+    Gainer Full,
+
+<hr>
+
+<h5>DANDO</h5>
+    Front: Double Twist,
+    Back: Double Twist,
+    Back: Tripple Twist,
+    Front: Randy,
+    Back: Rudy,
+
+    Inward Front Tuck,
+    Inward Front Pike,
+
+    Double Gainer,
+    Gainer 1,5 Twist,
+    Gainer Double Twist,
+
+    Front: Double Tuck,
+    Back: Double Tuck,
+
+    Front: Double Pike,
+    Back: Double Pike,
+
+    Front: Barani In Tuck,
+    Front: Double Out Tuck,
+
+    Front: Barani In Pike,
+    Front: Double Out Pike,
+
+    Full Half,
 
 <br><br>

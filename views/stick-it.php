@@ -77,16 +77,16 @@
     </div>
 
     <div v-if="status == 'SKILLSET'">
-        <table class="table">
+        <table class="my-table">
             <thead>
                 <tr>
-                    <th scope="col">Round</th>
+                    <th scope="col" class="text-center">Round</th>
                     <th scope="col">Skill</th>
                 </tr>
           </thead>
           <tbody>
               <tr v-for="skill in round_skills">
-                  <td>{{ $index+1 }}</td>
+                  <td class="text-center">{{ $index+1 }}</td>
                   <td>{{ skill }}</td>
               </tr>
           </tbody>
