@@ -1,5 +1,5 @@
 <div id="stickit" style="max-width: 414px; height: 100%; background-color: #f7f7f7; padding: 25px; margin: auto;">
-    <h1 class="text-center">Gymnastick It</h1>
+    <h1 class="text-center"><a href="/">Gymnastick It</a></h1>
     <div v-if="status == 'HOME'">
 
         <br>
@@ -26,35 +26,23 @@
             </div>
             <div class="col text-center">
                 <h4>Level</h4>
+                <input list="levels" type="text" name="level" placeholder="Level" class="form-control" v-model="level" style="margin-top: 13px;">
 
-                <label style="margin-right: 10px;" for="level1">1<br/>
-                    <input type="radio" id="level1" name="level" value="1" v-model="level">
-                </label>
-
-                <label style="margin-right: 10px;" for="level2">2<br/>
-                    <input type="radio" id="level2" name="level" value="2" v-model="level">
-                </label>
-
-                <label style="margin-right: 10px;" for="level3">3<br/>
-                    <input type="radio" id="level3" name="level" value="3" v-model="level">
-                </label>
-
-                <label style="margin-right: 10px;" for="level4">4<br/>
-                    <input type="radio" id="level4" name="level" value="4" v-model="level">
-                </label>
-
-                <label style="margin-right: 10px;" for="level5">A<br/>
-                    <input type="radio" id="level5" name="level" value="5" v-model="level">
-                </label>
+                <datalist id="levels">
+                    <option value="level 1">
+                    <option value="level 2">
+                    <option value="level 3">
+                    <option value="level 4">
+                </datalist>
             </div>
         </div>
 
-        <div style="margin-top: 15px; margin-bottom: 0px;">
-            <input type="checkbox" name="hard_mode" v-model="hard_mode">
-            <label>Hard Mode</label>
+        <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+            <div class="col" style="padding-top: 6px">
+                <input type="checkbox" name="hard_mode" v-model="hard_mode">
+                <label>Hard Mode</label>
+            </div>
         </div>
-
-        <br>
 
         <h4>Players</h4>
 
@@ -83,7 +71,7 @@
         </table>
 
         <div class="text-center">
-            <button class="btn btn-success" :disabled="players.length < 2" @click="start">START</button>
+            <button class="btn btn-success" :disabled="players.length < 1" @click="start">START</button>
         </div>
 
     </div>
@@ -105,7 +93,7 @@
         </table>
 
         <div class="text-center">
-            <button class="btn btn-outline-secondary" :disabled="players.length < 2" @click="setRoundSkills()">Shuffle</button>
+            <button class="btn btn-outline-secondary" @click="setRoundSkills()">Shuffle</button>
         </div>
 
         <br>
