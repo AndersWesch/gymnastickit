@@ -1,9 +1,8 @@
 <div id="stickit" style="max-width: 414px; height: 100%; background-color: #f7f7f7; padding: 25px; margin: auto;">
-    <h1 class="text-center"><a href="/">Gymnastick It</a></h1>
-    <div v-if="status == 'HOME'">
 
-        <br>
+    <h1 class="text-center"><a href="/"><span style="color: #2f7dde">gymna</span><span style="color: #de2f2f">Stick It</span></a></h1>
 
+    <div v-if="status == 'HOME'" style="margin-top: 15px;">
         <div class="row">
             <div class="col text-center">
                 <h4>Rounds</h4>
@@ -70,13 +69,12 @@
           </tbody>
         </table>
 
-        <div class="text-center">
+        <div class="text-center" style="margin-top: 15px;">
             <button class="btn btn-success" :disabled="players.length < 1" @click="start">START</button>
         </div>
-
     </div>
 
-    <div v-if="status == 'SKILLSET'">
+    <div v-if="status == 'SKILLSET'" style="margin-top: 15px;">
         <table class="my-table">
             <thead>
                 <tr>
@@ -92,7 +90,7 @@
           </tbody>
         </table>
 
-        <div class="text-center">
+        <div class="text-center" style="margin-top: 20px;">
             <button class="btn btn-outline-secondary" @click="setRoundSkills()">Shuffle</button>
         </div>
 
@@ -109,8 +107,7 @@
 
     </div>
 
-    <div v-if="status == 'RUNNING'">
-        <br>
+    <div v-if="status == 'RUNNING'" style="margin-top: 15px;">
         <div class="row">
             <div class="col text-center">
                 <p>Round</p>
@@ -171,13 +168,14 @@
         </div>
     </div>
 
-    <div v-if="status == 'RESULT'">
+    <div v-if="status == 'RESULT'" style="margin-top: 15px;">
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Name</th>
                     <th scope="col">Result</th>
+                    <th scope="col">Stats</th>
                 </tr>
           </thead>
           <tbody>
@@ -185,6 +183,13 @@
                   <td>{{ $index+1 }}</td>
                   <td>{{ player.name }}</td>
                   <td>{{ player.result }}</td>
+                  <td>
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" :style="'width: ' + (player.sticks/rounds) * 100 + '%'"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" :style="'width: ' + (player.steps/rounds) * 100 + '%'"></div>
+                        <div class="progress-bar bg-danger" role="progressbar" :style="'width: ' + (player.nopes/rounds) * 100 + '%'"></div>
+                    </div>
+                  </td>
               </tr>
           </tbody>
         </table>

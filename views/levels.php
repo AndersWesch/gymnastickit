@@ -1,6 +1,6 @@
 <div id="app" style="max-width: 414px; height: 100%; background-color: #f7f7f7; padding: 25px; margin: auto;">
 
-<h1 class="text-center"><a href="/">Gymnastick It</a></h1>
+<h1 class="text-center"><a href="/"><span style="color: #2f7dde">gymna</span><span style="color: #de2f2f">Stick It</span></a></h1>
 
 <h5>Level 1</h5>
     Font: Tuck,

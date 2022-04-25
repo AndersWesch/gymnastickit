@@ -39,7 +39,10 @@ new Vue({
             player = {
                 name: this.player_name,
                 scores: {},
-                result: 0
+                result: 0,
+                sticks: 0,
+                steps: 0,
+                nopes: 0,
             };
 
             this.players.push(player);
@@ -91,12 +94,29 @@ new Vue({
         calculateScore: function () {
             for (let i = 0; i < this.players.length; i++) {
                 var score = 0;
+                var sticks = 0;
+                var steps = 0;
+                var nopes = 0;
 
                 for (let j = 1; j <= this.rounds; j++) {
                     score = score + parseInt(this.players[i].scores[j]);
+
+                    switch (parseInt(this.players[i].scores[j])) {
+                        case 2:
+                            sticks++;
+                            break;
+                        case 1:
+                            steps++;
+                            break;
+                        default:
+                            nopes++;
+                    }
                 }
 
                 this.players[i].result = score;
+                this.players[i].sticks = sticks;
+                this.players[i].steps = steps;
+                this.players[i].nopes = nopes;
             }
 
             this.players.sort((a,b) => b.result - a.result);
