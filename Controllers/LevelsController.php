@@ -9,6 +9,6 @@ class LevelsController extends Controller
      */
     public function index()
     {
-        $this->view->render('levels', [], 'Levels', false);
+        $this->view->render('levels', [], 'Levels');
     }
 }

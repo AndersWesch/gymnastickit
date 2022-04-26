@@ -14,13 +14,11 @@ class View
     public function render(
         $viewPath,
         $data = [],
-        $title = 'Title',
-        $footer = true
+        $title = 'Title'
     ) {
         $this->view = $viewPath;
         $this->data = $data;
         $this->title = $title;
-        $this->footer = $footer;
 
         require('../views/layout.php');
     }

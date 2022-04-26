@@ -3,6 +3,8 @@
 <head>
     <title><?php echo($this->title) ?></title>
 
+    <link rel="icon" href="images/favicon.png">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -40,10 +42,6 @@
             require_once($this->view. '.php');
         ?>
     </main>
-
-    <?php if ($this->footer) {
-        include('components/footer.php');
-    } ?>
 
     <!-- Vue.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>

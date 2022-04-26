@@ -3,9 +3,9 @@
     <h1 class="text-center"><a href="/"><span style="color: #2f7dde">gymna</span><span style="color: #de2f2f">Stick It</span></a></h1>
 
     <div class="row" style="padding-top: 10%;">
-        <h2>Who</h2>
+        <h2>Who & Why</h2>
         <p>
-            My name is Anders Wesch and I am an old gymnast who loves Stick It's.
+            My name is Anders Wesch and I am an old gymnast who loves Stick Its.
             I'm now a software engineer and found it fun to make this game to spread the joy of gymnastics.
         </p>
 
@@ -21,4 +21,7 @@
         <p>Yes - write to me</p>
     </div>
 
+    <footer v-if="status == 'HOME'" class="footer" style="position: fixed; bottom: 25px; width: 87%">
+        <?php include('components/footer.php'); ?>
+    </footer>
 </div>

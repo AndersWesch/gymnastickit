@@ -207,6 +207,8 @@
     <div v-if="error != ''">
         <p class="text-center" style="color: #dc3545">{{ error }}</p>
     </div>
+
+    <footer v-if="status == 'HOME'" class="footer" style="position: fixed; bottom: 25px; width: 87%">
+        <?php include('components/footer.php'); ?>
+    </footer>
 </div>
-
-
