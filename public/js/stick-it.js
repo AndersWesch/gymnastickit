@@ -91,6 +91,16 @@ new Vue({
             this.status = 'RUNNING';
         },
 
+        getPlayerScore: function () {
+            var score = 0;
+
+            for (let j = 1; j <= this.round_index-1; j++) {
+                score = score + parseInt(this.players[this.player_index].scores[j]);
+            }
+
+            return score;
+        },
+
         calculateScore: function () {
             for (let i = 0; i < this.players.length; i++) {
                 var score = 0;

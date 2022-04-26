@@ -13,7 +13,6 @@ www.gymnastickit.com
 
 ### TODO ###
  * midway score
- * add icon
 
 
 ### Ideas ###

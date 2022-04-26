@@ -120,8 +120,7 @@
         </div>
 
         <h2 class="text-center">{{ players[player_index].name }}</h2>
-
-        <br>
+        <p class="text-center" style="margin-bottom: 0px; margin-top: -10px; font-size: 13px;">Score: {{ getPlayerScore() }}</p>
 
         <div class="radios">
             <input
