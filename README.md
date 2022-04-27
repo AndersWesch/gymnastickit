@@ -12,10 +12,8 @@ www.gymnastickit.com
 * Open brower on http://127.0.0.1:8000/
 
 ### TODO ###
- * midway score
-
+ *
 
 ### Ideas ###
  - Adventure mode (going through all the skills (playable alone))
- - Fold out result to see each persons scores
  - Stick Adventure (stick something and go to the next level (each level has a code so you can continue from there))

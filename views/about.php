@@ -9,8 +9,8 @@
 
         <h2>Scoring</h2>
         <p>The landing defines the score and there are three different options: </p>
-        <p>Stick is solid landing where no steps has been taken, it gives you 2 points.</p>
-        <p>Step is landing with a single step, it gives you 1 point.</p>
+        <p>Stick is a solid landing where no steps has been taken, it gives you 2 points.</p>
+        <p>Step is a landing with a single step, it gives you 1 point.</p>
         <p>Nope is everything else and the score is 0 on Normal Mode and -1 on Hard Mode</p>
 
         <h2>Levels</h2>
