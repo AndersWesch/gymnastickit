@@ -3,8 +3,13 @@ var levels = [
     'level2',
     'level3',
     'level4',
+    'tramp1',
+    'tramp2',
+    'tramp3',
+    'tramp4',
     'alegria',
-    'dando'
+    'dando',
+    'sally'
 ];
 
 var dando = [
@@ -52,6 +57,24 @@ var alegria = [
 
     'Gainer Pike',
     'Gainer Full',
+];
+
+var sally = [
+    'Front: Tuck',
+    'Front: Pike',
+    'Front: Straight',
+    'Back: Tuck',
+    'Back: Pike',
+    'Back: Straight',
+    'Front: Barani Tuck',
+    'Front: Straight Jump',
+    'Back: Straight Jump',
+    'Front: Straight Jump Half Twist',
+    'Back: Straight Jump Half Twist',
+    'Front: Split Jump',
+    'Back: Split Jump',
+    'Front: Split Jump Half Twist',
+    'Back: Split Jump Half Twist',
 ];
 
 var level1 = [
@@ -185,4 +208,69 @@ var level4 = [
     'Front: Full Half Back',
 
     'Back: Full Full Full',
+];
+
+var tramp1 = [
+    'Front: Tuck',
+    'Front: Pike',
+    'Front: Straight',
+    'Front: Barani',
+    'Front: Full Twist',
+    'Front: Rudy'
+];
+
+var tramp2 = [
+    'Front: Rudy',
+    'Front: Double Twist',
+    'Front: Double Tuck',
+    'Front: Double Pike',
+    'Front: Barani In Tuck',
+    'Front: Double Out Tuck',
+    'Front: Barani In Pike',
+    'Front: Double Out Pike',
+];
+
+var tramp3 = [
+    'Front: Double Twist',
+    'Front: 2,5 Twist',
+    'Front: Barani In Straight',
+    'Front: Double Out Straight',
+    'Front: Full In Tuck', // Full In
+    'Front: Full In Pike',
+    'Front: Double Tuck Full Out', // Full Out
+    'Front: Double Pike Full Out',
+    'Front: Full Full Tuck', // Full Full
+    'Front: Full Full Straight',
+    'Front: Full Half Tuck', // Full Half
+    'Front: Full Half Straight',
+    'Front: Double Tuck Rudy Out', // Rudy Out
+    'Front: Double Pike Rudy Out',
+    'Front: Double Straight Rudy Out',
+    'Front: Full Rudy Tuck',
+    'Front: Full Rudy Straight',
+];
+
+var tramp4 = [
+    'Front: 3,5 Twist',
+    'Front: Double Tuck Randy Out',
+    'Front: Double Pike Randy Out',
+    'Front: Rudy In Tuck',
+    'Front: Rudy In Pike',
+    'Front: Full Full Tuck', // Full Full
+    'Front: Full Full Straight',
+    'Front: Full Rudy Tuck', // Full Rudy
+    'Front: Full Rudy Straight',
+    'Front: Miller Tuck', // Miller
+    'Front: Miller Straight',
+    'Front: Double with 3,5 Twist Straight',
+    'Front: Double with 3,5 Twist Tuck',
+    'Front: Tripple Tuck', // Tripples no twists
+    'Front: Tripple Pike',
+    'Front: Tripple Out Tuck', // Tripples with twist
+    'Front: Tripple Out Pike',
+    'Front: Tripple Tuck Rudy Out',
+    'Front: Tripple Pike Rudy Out',
+    'Front: Full Full Half',
+    'Front: Front Full Half',
+    'Front: Full Half Back',
 ];

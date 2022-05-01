@@ -175,7 +175,12 @@ new Vue({
             for (let i = 0; i <= this.rounds-1; i++) {
                 var skill = this.getSkill();
 
-                while (this.round_skills.includes(skill)) {
+                // If the skill set is shorter than rounds duplicates are allowed
+                if (eval(this.level_trim).length > this.rounds) {
+                    while (this.round_skills.includes(skill)) {
+                        skill = this.getSkill();
+                    }
+                } else {
                     skill = this.getSkill();
                 }
 

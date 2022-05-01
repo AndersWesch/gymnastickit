@@ -158,32 +158,120 @@
     <hr>
 
     <h5>DANDO</h5>
-    Front: Double Twist,
-    Back: Double Twist,
-    Back: Tripple Twist,
-    Front: Randy,
-    Back: Rudy,
+        Front: Double Twist,
+        Back: Double Twist,
+        Back: Tripple Twist,
+        Front: Randy,
+        Back: Rudy,
 
-    Inward Front Tuck,
-    Inward Front Pike,
+        Inward Front Tuck,
+        Inward Front Pike,
 
-    Double Gainer,
-    Gainer 1,5 Twist,
-    Gainer Double Twist,
+        Double Gainer,
+        Gainer 1,5 Twist,
+        Gainer Double Twist,
 
-    Front: Double Tuck,
-    Back: Double Tuck,
+        Front: Double Tuck,
+        Back: Double Tuck,
 
-    Front: Double Pike,
-    Back: Double Pike,
+        Front: Double Pike,
+        Back: Double Pike,
 
-    Front: Barani In Tuck,
-    Front: Double Out Tuck,
+        Front: Barani In Tuck,
+        Front: Double Out Tuck,
 
-    Front: Barani In Pike,
-    Front: Double Out Pike,
+        Front: Barani In Pike,
+        Front: Double Out Pike,
 
-    Full Half,
+        Full Half,
+
+    <hr>
+
+    <h5>Sally</h5>
+        Front: Tuck,
+        Front: Pike,
+        Front: Straight,
+        Back: Tuck,
+        Back: Pike,
+        Back: Straight,
+        Front: Barani Tuck,
+        Front: Straight Jump,
+        Back: Straight Jump,
+        Front: Straight Jump Half Twist,
+        Back: Straight Jump Half Twist,
+        Front: Split Jump,
+        Back: Split Jump,
+        Front: Split Jump Half Twist,
+        Back: Split Jump Half Twist,
+
+    <hr>
+
+    <h5>Tramp1</h5>
+        Front: Tuck,
+        Front: Pike,
+        Front: Straight,
+        Front: Barani,
+        Front: Full Twist,
+        Front: Rudy
+
+    <hr>
+
+    <h5>Tramp2</h5>
+        Front: Rudy,
+        Front: Double Twist,
+        Front: Double Tuck,
+        Front: Double Pike,
+        Front: Barani In Tuck,
+        Front: Double Out Tuck,
+        Front: Barani In Pike,
+        Front: Double Out Pike,
+
+    <hr>
+
+    <h5>Tramp3</h5>
+        Front: Double Twist,
+        Front: 2,5 Twist,
+        Front: Barani In Straight,
+        Front: Double Out Straight,
+        Front: Full In Tuck,
+        Front: Full In Pike,
+        Front: Double Tuck Full Out,
+        Front: Double Pike Full Out,
+        Front: Full Full Tuck,
+        Front: Full Full Straight,
+        Front: Full Half Tuck,
+        Front: Full Half Straight,
+        Front: Double Tuck Rudy Out,
+        Front: Double Pike Rudy Out,
+        Front: Double Straight Rudy Out,
+        Front: Full Rudy Tuck,
+        Front: Full Rudy Straight,
+
+    <hr>
+
+    <h5>Tramp4</h5>
+        Front: 3,5 Twist,
+        Front: Double Tuck Randy Out,
+        Front: Double Pike Randy Out,
+        Front: Rudy In Tuck,
+        Front: Rudy In Pike,
+        Front: Full Full Tuck,
+        Front: Full Full Straight,
+        Front: Full Rudy Tuck,
+        Front: Full Rudy Straight,
+        Front: Miller Tuck,
+        Front: Miller Straight,
+        Front: Double with 3,5 Twist Straight,
+        Front: Double with 3,5 Twist Tuck,
+        Front: Tripple Tuck,
+        Front: Tripple Pike,
+        Front: Tripple Out Tuck,
+        Front: Tripple Out Pike,
+        Front: Tripple Tuck Rudy Out,
+        Front: Tripple Pike Rudy Out,
+        Front: Full Full Half,
+        Front: Front Full Half,
+        Front: Full Half Back,
 
     <br><br>
 
