@@ -3,17 +3,14 @@
     <h1 class="text-center"><a href="/"><span style="color: #2f7dde">gymna</span><span style="color: #de2f2f">Stick It</span></a></h1>
 
     <h5>Level 1</h5>
-        Font: Tuck,
-        Font: Pike,
-        Font: Straight,
-
+        Front: Tuck,
         Back: Tuck,
+        Front: Pike,
         Back: Pike,
+        Front: Straight,
         Back: Straight,
-
         Front: Barani,
         Back: 1/2 Twist,
-
         Back: Full Twist,
         Front: Full Twist,
         Front: Rudy
@@ -23,19 +20,14 @@
     <h5>Level 2</h5>
         Front: Rudy,
         Back: Rudy,
-
         Front: Double Twist,
         Back: Double Twist,
-
         Front: Double Tuck,
         Back: Double Tuck,
-
         Front: Double Pike,
         Back: Double Pike,
-
         Front: Barani In Tuck,
         Front: Double Out Tuck,
-
         Front: Barani In Pike,
         Front: Double Out Pike,
 
@@ -65,22 +57,22 @@
         Back: Double Pike Full Out,
         Back: Double Straight Full Out,
 
-        Front: Full Full Tuck,
-        Back: Full Full Tuck,
-        Front: Full Full Straight,
-        Back: Full Full Straight,
-
         Front: Full Half Tuck,
         Back: Full Half Tuck,
         Front: Full Half Straight,
         Back: Full Half Straight,
 
+        Front: Full Full Tuck,
+        Back: Full Full Tuck,
+        Front: Full Full Straight,
+        Back: Full Full Straight,
+
         Front: Double Tuck Rudy Out,
         Front: Double Pike Rudy Out,
         Front: Double Straight Rudy Out,
 
-        Front: Full Rudy Tuck,
-        Front: Full Rudy Straight,
+        Front: Randy Tuck,
+        Front: Randy Straight,
 
     <hr>
 
@@ -102,10 +94,10 @@
         Front: Full Full Straight,
         Back: Full Full Straight,
 
-        Front: Full Rudy Tuck,
-        Front: Full Rudy Straight,
-        Back: Full Rudy Tuck,
-        Back: Full Rudy Straight,
+        Front: Randy Tuck,
+        Front: Randy Straight,
+        Back: Randy Tuck,
+        Back: Randy Straight,
 
         Front: Miller Tuck,
         Front: Miller Straight,
@@ -139,62 +131,49 @@
     <hr>
 
     <h5>Alegria</h5>
+        Inward Front Tuck,
+        Front Full,
+        Gainer Pike,
+        Inward Front Pike,
+        Back Full,
+        Gainer Half Twist,
+        Inward Front Barani,
+        Front Rudy,
+        Back Rudy,
+        Gainer Full,
         Double Front Tuck,
-        Double Front Pike,
-
         Double Back Tuck,
+        Double Front Pike,
         Double Back Pike,
-
         Barani In Tuck,
         Barani In Pike,
-
-        Front Rudy,
-        Back Full,
-        Front Full,
-
-        Gainer Pike,
-        Gainer Full,
 
     <hr>
 
     <h5>DANDO</h5>
-        Front: Double Twist,
-        Back: Double Twist,
-        Back: Tripple Twist,
-        Front: Randy,
-        Back: Rudy,
-
         Inward Front Tuck,
         Inward Front Pike,
-
-        Double Gainer,
+        Back: Rudy,
         Gainer 1,5 Twist,
+        Front: Double Twist,
+        Back: Double Twist,
         Gainer Double Twist,
-
+        Front: Randy,
+        Back: Tripple Twist,
         Front: Double Tuck,
         Back: Double Tuck,
-
+        Double Gainer,
         Front: Double Pike,
         Back: Double Pike,
-
         Front: Barani In Tuck,
         Front: Double Out Tuck,
-
         Front: Barani In Pike,
         Front: Double Out Pike,
-
         Full Half,
 
     <hr>
 
     <h5>Sally</h5>
-        Front: Tuck,
-        Front: Pike,
-        Front: Straight,
-        Back: Tuck,
-        Back: Pike,
-        Back: Straight,
-        Front: Barani Tuck,
         Front: Straight Jump,
         Back: Straight Jump,
         Front: Straight Jump Half Twist,
@@ -203,6 +182,13 @@
         Back: Split Jump,
         Front: Split Jump Half Twist,
         Back: Split Jump Half Twist,
+        Front: Tuck,
+        Back: Tuck,
+        Front: Pike,
+        Back: Pike,
+        Front: Straight,
+        Back: Straight,
+        Front: Barani Tuck,
 
     <hr>
 
@@ -244,8 +230,8 @@
         Front: Double Tuck Rudy Out,
         Front: Double Pike Rudy Out,
         Front: Double Straight Rudy Out,
-        Front: Full Rudy Tuck,
-        Front: Full Rudy Straight,
+        Front: Randy Tuck,
+        Front: Randy Straight,
 
     <hr>
 
@@ -257,8 +243,8 @@
         Front: Rudy In Pike,
         Front: Full Full Tuck,
         Front: Full Full Straight,
-        Front: Full Rudy Tuck,
-        Front: Full Rudy Straight,
+        Front: Randy Tuck,
+        Front: Randy Straight,
         Front: Miller Tuck,
         Front: Miller Straight,
         Front: Double with 3,5 Twist Straight,

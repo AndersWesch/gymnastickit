@@ -8,10 +8,13 @@ new Vue({
         rounds: 3,
         round_skills: [],
         round_index: 1,
+        start_round: 1,
+        scored_rounds: 0,
         level: '',
         level_trim: '',
         error: '',
         hard_mode: false,
+        adventure_mode: false,
         nope_value: 0
     },
 
@@ -54,6 +57,10 @@ new Vue({
             this.players.splice(playerIndex, 1);
         },
 
+        setAdventureLevel: function () {
+            this.level = 'everything';
+        },
+
         start: function () {
             if (this.players.length < 1) {
                 this.error = 'Not enough players';
@@ -79,15 +86,35 @@ new Vue({
                 this.nope_value = 0;
             }
 
+            this.scored_rounds = 0;
+            this.error = '';
             this.round_index = 1;
             this.player_index = 0;
-            this.setRoundSkills();
-            this.error = '';
-            this.status = 'SKILLSET';
             this.resetScores();
+
+            // Adventure Mode
+            if (this.adventure_mode) {
+                this.status = 'START_ADVENTURE';
+                return;
+            }
+
+            // Normal Stick It
+            this.setRoundSkills();
+            this.status = 'SKILLSET';
         },
 
         startGame: function () {
+            if (this.start_round >= eval(this.level_trim).length) {
+                this.error = 'Start round is too high!'
+                return;
+            }
+
+            if (this.adventure_mode) {
+                this.rounds = eval(this.level_trim).length - this.start_round + 1;
+                this.setRoundSkills();
+            }
+
+            this.error = '';
             this.status = 'RUNNING';
         },
 
@@ -172,6 +199,16 @@ new Vue({
         setRoundSkills: function() {
             this.round_skills = [];
 
+            // Adventure Mode Skill Set
+            if (this.adventure_mode) {
+                for (let i = this.start_round-1; i <= eval(this.level_trim).length; i++) {
+                    this.round_skills.push(eval(this.level_trim)[i]);
+                }
+
+                return;
+            }
+
+            // Normal Mode Skill Set
             for (let i = 0; i <= this.rounds-1; i++) {
                 var skill = this.getSkill();
 
@@ -182,6 +219,10 @@ new Vue({
                     }
                 } else {
                     skill = this.getSkill();
+                }
+
+                if (this.adventure_mode) {
+                    skill = eval(this.level_trim)[i];
                 }
 
                 this.round_skills[i] = skill;
@@ -200,12 +241,11 @@ new Vue({
             this.start();
         },
 
-        isButtonChecked: function (score) {
-            if (this.players[this.player_index].scores[this.round_index] == score) {
-                return true;
-            }
+        finishAdventure: function () {
+            this.player_index = this.players.length - 1;
+            this.rounds = this.round_index - 1;
 
-            return false;
+            this.next();
         }
     }
 });

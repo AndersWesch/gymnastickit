@@ -6,6 +6,8 @@
     <link rel="icon" href="images/favicon.ico">
 
     <meta charset="utf-8">
+    <meta name="description" content="Gymnastick It is a simple Stick It game that helps you keep track of skills and scores.">
+    <meta name="keywords" content="gymnastick it, stick it, gymnastics, stick game, tumbling">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">

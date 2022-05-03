@@ -15,7 +15,13 @@
 
         <h2>Levels</h2>
         <p>There are 4 main levels which should be sufficient for almost any level of player.</p>
+        <p>If you can't find the level you are looking for in the dropdown just type in the name.</p>
         <p>If you look in the <a style="color: #2f7dde" href="/levels">levels</a> tab you'll see the different skills in each level and maybe find a new level to try.</p>
+
+        <h2>Adventure Mode</h2>
+        <p>Adventure Mode is a special mode where the jumps build up little by little.</p>
+        <p>There is no round limit but the game can be stopped whenever a new round begins.</p>
+        <p>If you wish to start from another round just type in the round number and you will start later on in the build up.</p>
     </div>
 
     <br>

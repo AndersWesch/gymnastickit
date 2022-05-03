@@ -8,19 +8,19 @@
                 <h4>Rounds</h4>
 
                 <label style="margin-right: 10px;" for="rounds1">3<br/>
-                    <input type="radio" id="rounds1" name="rounds" value="3" v-model="rounds">
+                    <input :disabled="adventure_mode" type="radio" id="rounds1" name="rounds" value="3" v-model="rounds">
                 </label>
 
                 <label style="margin-right: 10px;" for="rounds2">5<br/>
-                    <input type="radio" id="rounds2" name="rounds" value="5" v-model="rounds">
+                    <input :disabled="adventure_mode" type="radio" id="rounds2" name="rounds" value="5" v-model="rounds">
                 </label>
 
                 <label style="margin-right: 10px;" for="rounds3">7<br/>
-                    <input type="radio" id="rounds3" name="rounds" value="7" v-model="rounds">
+                    <input :disabled="adventure_mode" type="radio" id="rounds3" name="rounds" value="7" v-model="rounds">
                 </label>
 
                 <label style="margin-right: 10px;" for="rounds4">10<br/>
-                    <input type="radio" id="rounds4" name="rounds" value="10" v-model="rounds">
+                    <input :disabled="adventure_mode" type="radio" id="rounds4" name="rounds" value="10" v-model="rounds">
                 </label>
             </div>
             <div class="col text-center">
@@ -40,6 +40,11 @@
             <div class="col" style="padding-top: 6px">
                 <input type="checkbox" name="hard_mode" v-model="hard_mode">
                 <label>Hard Mode</label>
+            </div>
+
+            <div class="col" style="padding-top: 6px">
+                <input type="checkbox" name="adventure_mode" v-model="adventure_mode" @click="setAdventureLevel()">
+                <label>Adventure Mode</label>
             </div>
         </div>
 
@@ -74,6 +79,22 @@
         </div>
     </div>
 
+    <div v-if="status == 'START_ADVENTURE'" style="margin-top: 15px;">
+        <label>Start round</label>
+        <input type="number" name="start_round" class="form-control" v-model="start_round">
+
+        <br>
+
+        <div class="row">
+            <div class="col text-start">
+                <button class="btn btn-secondary" @click="home">Back</button>
+            </div>
+            <div class="col text-end">
+                <button class="btn btn-success" @click="startGame">Start</button>
+            </div>
+        </div>
+    </div>
+
     <div v-if="status == 'SKILLSET'" style="margin-top: 15px;">
         <table class="my-table">
             <thead>
@@ -104,7 +125,6 @@
                 <button class="btn btn-success" @click="startGame">Start</button>
             </div>
         </div>
-
     </div>
 
     <div v-if="status == 'RUNNING'" style="margin-top: 15px;">
@@ -161,8 +181,11 @@
             <div class="col text-start">
                 <button class="btn btn-secondary" @click="back">Back</button>
             </div>
+            <div class="col text-center" v-if="adventure_mode && player_index == 0">
+                <button class="btn btn-outline-dark" @click="finishAdventure">Finish</button>
+            </div>
             <div class="col text-end">
-                <button class="btn btn-secondary" @click="next">Next</button>
+                <button class="btn btn-secondary" @click="next()">Next</button>
             </div>
         </div>
     </div>
