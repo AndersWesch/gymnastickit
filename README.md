@@ -12,7 +12,8 @@ www.gymnastickit.com
 * Open brower on http://127.0.0.1:8000/
 
 ### TODO ###
- *
+ * Autofill nej tak
+ * rytme level
 
 ### Ideas ###
  - Adventure mode (going through all the skills (playable alone))
