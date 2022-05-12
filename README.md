@@ -14,6 +14,10 @@ www.gymnastickit.com
 ### TODO ###
  * Autofill nej tak
  * rytme level
+ * iPad venlig
+ * Game of FLIP
+ * Lydeffekter
+ * Team VS Team
 
 ### Ideas ###
  - Adventure mode (going through all the skills (playable alone))

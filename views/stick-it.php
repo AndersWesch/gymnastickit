@@ -1,4 +1,4 @@
-<div id="stickit" style="max-width: 414px; height: 100%; background-color: #f7f7f7; padding: 25px; margin: auto;">
+<div id="stickit" class="page-div">
 
     <h1 class="text-center"><a href="/"><span style="color: #2f7dde">gymna</span><span style="color: #de2f2f">Stick It</span></a></h1>
 
@@ -50,29 +50,31 @@
 
         <h4>Players</h4>
 
-        <div class="input-group mb-3" v-if="players.length < 6">
+        <div class="input-group mb-3" v-if="players.length < 10">
             <input v-on:keyup.enter="addPlayer" name="players" v-model="player_name" type="text" class="form-control" placeholder="Player name" autocomplete="off">
             <div class="input-group-append">
-                <button v-if="players.length < 6" @click="addPlayer" class="btn btn-outline-success" type="button">Add</button>
+                <button v-if="players.length < 10" @click="addPlayer" class="btn btn-outline-success" type="button">Add</button>
             </div>
         </div>
 
-        <table class="my-table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col"></th>
-                </tr>
-          </thead>
-          <tbody>
-              <tr v-for="player in players">
-                  <td>{{ $index+1 }}</td>
-                  <td>{{ player.name }}</td>
-                  <td><button @click="removePlayer($index)" class="btn btn-danger btn-sm remove-player-btn">X</button></td>
-              </tr>
-          </tbody>
-        </table>
+        <div>
+            <table class="my-table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col"></th>
+                    </tr>
+              </thead>
+              <tbody>
+                  <tr v-for="player in players">
+                      <td>{{ $index+1 }}</td>
+                      <td>{{ player.name }}</td>
+                      <td><button @click="removePlayer($index)" class="btn btn-danger btn-sm remove-player-btn">X</button></td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
 
         <div class="text-center" style="margin-top: 15px;">
             <button class="btn btn-success" :disabled="players.length < 1" @click="start">START</button>
@@ -230,7 +232,11 @@
         <p class="text-center" style="color: #dc3545">{{ error }}</p>
     </div>
 
-    <footer v-if="status == 'HOME'" class="footer" style="position: fixed; bottom: 25px; width: 87%">
+    <footer v-if="status == 'HOME' && players.length < 6" class="footer" style="position: fixed; bottom: 25px; width: 87%">
+        <?php include('components/footer.php'); ?>
+    </footer>
+
+    <footer v-if="status == 'HOME' && players.length >= 6" style="padding-bottom: 10px; padding-top: 10px;">
         <?php include('components/footer.php'); ?>
     </footer>
 </div>

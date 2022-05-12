@@ -1,4 +1,4 @@
-<div id="app" style="max-width: 414px; background-color: #f7f7f7; padding: 25px; margin: auto;">
+<div id="app" class="page-div">
 
     <h1 class="text-center"><a href="/"><span style="color: #2f7dde">gymna</span><span style="color: #de2f2f">Stick It</span></a></h1>
 

@@ -9,6 +9,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $this->view->render('stick-it', [], 'Stick It');
+        $this->view->render('stick-it', [], 'Gymnastick It');
     }
 }

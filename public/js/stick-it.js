@@ -15,7 +15,7 @@ new Vue({
         error: '',
         hard_mode: false,
         adventure_mode: false,
-        nope_value: 0
+        nope_value: 0,
     },
 
     methods: {

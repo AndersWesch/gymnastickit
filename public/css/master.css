@@ -1,6 +1,7 @@
 body {
     font-family: Futura,Trebuchet MS,Arial,sans-serif;
     font-weight: 100;
+    background-color: #f7f7f7;
 }
 
 h1, h2, h3, h4, h5 {
@@ -44,4 +45,11 @@ td {
 .remove-player-btn {
     border-radius: 50%;
     width: 32px;
+}
+
+.page-div {
+    max-width: 414px;
+
+    padding: 25px;
+    margin: auto;
 }
