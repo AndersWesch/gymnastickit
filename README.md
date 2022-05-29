@@ -12,13 +12,11 @@ www.gymnastickit.com
 * Open brower on http://127.0.0.1:8000/
 
 ### TODO ###
- * Autofill nej tak
  * rytme level
  * iPad venlig
  * Game of FLIP
- * Lydeffekter
- * Team VS Team
 
 ### Ideas ###
  - Adventure mode (going through all the skills (playable alone))
  - Stick Adventure (stick something and go to the next level (each level has a code so you can continue from there))
+ - Team VS Team

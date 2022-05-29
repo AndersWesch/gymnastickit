@@ -25,7 +25,7 @@
             </div>
             <div class="col text-center">
                 <h4>Level</h4>
-                <input list="levels" type="text" name="level" placeholder="Level" class="form-control" v-model="level" style="margin-top: 13px;">
+                <input list="levels" type="text" autocomplete="off" name="level" placeholder="Level" class="form-control" v-model="level" style="margin-top: 13px;">
 
                 <datalist id="levels">
                     <option value="level 1">
@@ -38,7 +38,7 @@
 
         <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
             <div class="col" style="padding-top: 6px">
-                <input type="checkbox" name="hard_mode" v-model="hard_mode">
+                <input type="checkbox" name="hard_mode" v-model="hard_mode" @click="setAlegria">
                 <label>Hard Mode</label>
             </div>
 
