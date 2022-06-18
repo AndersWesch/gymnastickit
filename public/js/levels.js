@@ -52,6 +52,8 @@ var alegria = [
     'Double Back Pike',
     'Barani In Tuck',
     'Barani In Pike',
+    'Inward Front Full',
+    'Double Gainer',
 ];
 
 var sally = [

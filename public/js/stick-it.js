@@ -249,21 +249,22 @@ new Vue({
         },
 
         setAlegria: function () {
-            if (this.level.toLowerCase() != 'alegria') {
-                return;
-            }
-
             if (this.players.length != 0) {
                 return;
             }
 
-            let players = ['Anders', 'Tommy', 'Joakim', 'Rasmus', 'Sasha', 'Lucie'];
+            if (this.level.toLowerCase() == 'alegria') {
+                var players = ['Anders', 'Tommy', 'Joakim', 'Rasmus', 'Sasha', 'Lucie'];
+            } else if (this.level.toLowerCase() == 'dando') {
+                var players = ['Anders', 'Tommy', 'Joakim', 'Rasmus'];
+            } else {
+                return;
+            }
 
             let shuffled = players
                 .map(value => ({ value, sort: Math.random() }))
                 .sort((a, b) => a.sort - b.sort)
                 .map(({ value }) => value)
-
 
             for (var i = 0; i <= shuffled.length-1; i++) {
                 this.player_name = shuffled[i];
