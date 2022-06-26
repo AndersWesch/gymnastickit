@@ -10,7 +10,8 @@ var levels = [
     'alegria',
     'dando',
     'sally',
-    'everything'
+    'everything',
+    'parkour'
 ];
 
 var dando = [
@@ -425,4 +426,18 @@ var everything = [
     'Back: Quadruple Pike',
     'Front: Quadruple Tuck Out',
     'Front: Quadruple Pike Out',
+];
+
+var parkour = [
+    'Monkey - pre (precision)',
+    'Dash - pre',
+    'Speed - pre',
+    'Lazy - pre',
+    'Sideflip - pre',
+    'Reverse - pre',
+    'Tic tac - pre',
+    'Double kong - pre',
+    '360 - pre',
+    'Bar swing - pre',
+    'Wallspin'
 ];

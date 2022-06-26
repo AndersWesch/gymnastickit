@@ -259,6 +259,21 @@
         Front: Front Full Half,
         Front: Full Half Back,
 
+    <hr>
+
+    <h5>Parkour</h5>
+        Monkey - pre (precision),
+        Dash - pre,
+        Speed - pre,
+        Lazy - pre,
+        Sideflip - pre,
+        Reverse - pre,
+        Tic tac - pre,
+        Double kong - pre,
+        360 - pre,
+        Bar swing - pre,
+        Wallspin
+
     <br><br>
 
     <?php include('components/footer.php'); ?>
