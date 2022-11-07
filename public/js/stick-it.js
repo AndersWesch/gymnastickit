@@ -254,9 +254,9 @@ new Vue({
             }
 
             if (this.level.toLowerCase() == 'alegria') {
-                var players = ['Anders', 'Tommy', 'Joakim', 'Rasmus', 'Sasha', 'Lucie'];
+                var players = ['Anders', 'Tommy', 'Joakim', 'Rasmus', 'Sasha', 'Elias', 'Lucie'];
             } else if (this.level.toLowerCase() == 'dando') {
-                var players = ['Anders', 'Tommy', 'Joakim', 'Rasmus'];
+                var players = ['Anders', 'Tommy', 'Joakim', 'Rasmus', 'Elias'];
             } else {
                 return;
             }

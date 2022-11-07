@@ -21,19 +21,27 @@ var dando = [
     'Gainer 1,5 Twist',
     'Front: Double Twist',
     'Back: Double Twist',
+    'Back: 2,5 twist',
     'Gainer Double Twist',
-    'Front: Randy',
+    'Front: 2,5 twist',
     'Back: Tripple Twist',
     'Front: Double Tuck',
     'Back: Double Tuck',
     'Double Gainer',
     'Front: Double Pike',
     'Back: Double Pike',
+    'Back: Double Straight',
     'Front: Barani In Tuck',
     'Front: Double Out Tuck',
     'Front: Barani In Pike',
     'Front: Double Out Pike',
-    'Full Half',
+    'Front: Full Half',
+    'Front: Randy Tuck',
+    'Back: Full In Pike',
+    'Back: Full In Straight',
+    'Barani In Half Out',
+    'Front: Double Tuck Full Out',
+    'Front: Double Pike Full Out',
 ];
 
 var alegria = [
@@ -64,6 +72,7 @@ var alegria = [
     'Back: Double Twist',
     'Back: Coca Cola',
     'Barani In Half Out',
+    'Front Tuck, Barani, Double Tuck'
 ];
 
 var sally = [
