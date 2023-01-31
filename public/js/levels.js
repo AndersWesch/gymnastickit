@@ -83,6 +83,7 @@ var dando = [
     'Inward Front Rudy',
     'Inward Front Tuck',
     'Rudy -> Double Tuck',
+    'Double Back -> Double Back'
 ];
 
 var alegria = [
